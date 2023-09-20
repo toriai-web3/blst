@@ -41,7 +41,8 @@ package blst
 //                             const byte *DST, size_t DST_len)
 // {   if (DST != NULL) {
 //         byte *dst = (byte*)new_ctx + blst_pairing_sizeof();
-//         for(size_t i = 0; i < DST_len; i++) dst[i] = DST[i];
+//		   size_t i;
+//         for(i = 0; i < DST_len; i++) dst[i] = DST[i];
 //         DST = dst;
 //     }
 //     blst_pairing_init(new_ctx, hash_or_encode, DST, DST_len);
